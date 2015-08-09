@@ -10,9 +10,7 @@ class TaskController {
 	render "<h1>Tarefas</h1>"
 	}
 	
-	def tasks3 () {
+	def tasks3 = {
 	
-	def staticCategory = "Estagiario"
-    [ category: staticCategory ]
 	}
 }

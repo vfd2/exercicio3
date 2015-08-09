@@ -40,7 +40,7 @@ class CategoryController {
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.id])
-                redirect categoryInstance
+                redirect(url:"https://vivian-exercicio3.herokuapp.com/category/show/" + categoryInstance.id)
             }
             '*' { respond categoryInstance, [status: CREATED] }
         }
@@ -67,7 +67,7 @@ class CategoryController {
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'Category.label', default: 'Category'), categoryInstance.id])
-                redirect categoryInstance
+                redirect(url:"https://vivian-exercicio3.herokuapp.com/category/show/" + categoryInstance.id)
             }
             '*'{ respond categoryInstance, [status: OK] }
         }
@@ -86,7 +86,7 @@ class CategoryController {
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'Category.label', default: 'Category'), categoryInstance.id])
-                redirect action:"index", method:"GET"
+                redirect(url:"https://vivian-exercicio3.herokuapp.com/category/index")
             }
             '*'{ render status: NO_CONTENT }
         }

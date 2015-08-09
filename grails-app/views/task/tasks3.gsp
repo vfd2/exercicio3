@@ -6,11 +6,7 @@
 </head>
 <body>
 <div>
-<g:select from="${task.category}" name="ling"/>
-<p>${task.category}</p>
-<g:link action="global">
-Admin
-</g:link>
+<p>${category}</p>
 </div>
 </body>
 </html>

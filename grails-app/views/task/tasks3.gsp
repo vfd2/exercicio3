@@ -6,7 +6,7 @@
 </head>
 <body>
 <div>
-<p>${category}</p>
+<p>teste</p>
 </div>
 </body>
 </html>

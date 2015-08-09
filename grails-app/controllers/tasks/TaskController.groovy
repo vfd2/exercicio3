@@ -3,7 +3,7 @@ package tasks
 class TaskController {
 
     def index() { 
-	 redirect(action: "tasks3")
+	 redirect(action: "home")
 	}
 	
 	def home() {

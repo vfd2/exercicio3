@@ -12,6 +12,7 @@ class TaskController {
 	
 	def tasks3 () {
 	
-	[ task: Category.list() ]
+	def staticCategory = "Estagiario"
+    [ category: staticCategory ]
 	}
 }

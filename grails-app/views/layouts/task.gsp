@@ -32,7 +32,7 @@
 				</div>
 				<div>
 					<label><a href="https://vivian-exercicio3.herokuapp.com/category/index" target="_blank">Categoria</a></label> 
-					<g:select from="${task.category}" name="category.id"/>
+					<g:select from="${task.category}" name="category1"/>
 					
 				</div>
 				<nav>
@@ -103,7 +103,7 @@ if (window.indexedDB) {
 					<!-- quando o complet3 recebe o valor true. -->
 						<td {{if complet3 == true}} class="taskCompleted" {{/if}}> ${task1}</td>
 						<td {{if complet3 == true}} class="taskCompleted" {{/if}}><time datetime="${requiredBy}"> ${requiredBy}</time></td>
-						<td {{if complet3 == true}} class="taskCompleted" {{/if}}>${category.id}</td>
+						<td {{if complet3 == true}} class="taskCompleted" {{/if}}>${category1}</td>
 						<td>
 							<nav>
 							{{if complet3 != true}}

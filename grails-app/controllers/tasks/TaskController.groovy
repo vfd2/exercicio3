@@ -6,10 +6,6 @@ class TaskController {
 	 redirect(action: "tasks3")
 	}
 	
-	def home() {
-	render "<h1>Tarefas</h1>"
-	}
-	
 	def tasks3 = {
 	[ task: Category.list() ]
 	}

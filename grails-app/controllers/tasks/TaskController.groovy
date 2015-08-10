@@ -11,6 +11,6 @@ class TaskController {
 	}
 	
 	def tasks3 = {
-	
+	[ task: Category.list() ]
 	}
 }

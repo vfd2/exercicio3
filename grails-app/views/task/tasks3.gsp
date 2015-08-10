@@ -5,7 +5,7 @@
 </head>
 <body>
 <div>
-<p>teste</p>
+<p>${task.category}</p>
 </div>
 </body>
 </html>

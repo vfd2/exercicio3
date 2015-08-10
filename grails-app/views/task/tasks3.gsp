@@ -1,11 +1,12 @@
+<!doctype html>
 <html>
 <head>
 <title>Tarefas</title>
-<meta name="layout" content="main"/>
+<g:javascript library="jquery" />
 </head>
 <body>
 <div>
-<p>oiiii</p>
+abcd
 </div>
 </body>
 </html>

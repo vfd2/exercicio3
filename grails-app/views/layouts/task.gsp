@@ -31,7 +31,7 @@
 					<label>Finalizar até</label> <input type="date" required="required" name="requiredBy" />
 				</div>
 				<div>
-					<label><a href="https://vivian-exercicio3.herokuapp.com/category/index" target="_blank">Categoria</a></label> 
+					<label><a href="https://vivian-exercicio3.herokuapp.com/category/index">Categoria</a></label> 
 					<g:select from="${task.category}" name="category1"/>
 					
 				</div>

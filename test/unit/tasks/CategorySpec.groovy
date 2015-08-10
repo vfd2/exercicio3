@@ -16,5 +16,6 @@ class CategorySpec extends Specification {
     }
 
     void "test something"() {
+	expect: true 
     }
 }

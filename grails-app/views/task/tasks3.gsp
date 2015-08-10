@@ -1,7 +1,7 @@
-<!doctype html>
 <html>
 <head>
 <title>Tarefas</title>
+<meta name="layout" content="main"/>
 </head>
 <body>
 <div>

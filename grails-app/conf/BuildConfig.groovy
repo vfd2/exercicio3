@@ -1,4 +1,4 @@
-grails.servlet.version = "2.5" // Change depending on target container compliance (2.5 or 3.0)
+grails.servlet.version = "3.0" // Change depending on target container compliance (2.5 or 3.0)
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
@@ -50,28 +50,25 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
-        // test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
-		// runtime 'postgresql:postgresql:9.1-901-1.jdbc4'
+        test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
+		runtime 'postgresql:postgresql:9.1-901-1.jdbc4'
 		
     }
 
     plugins {
         // plugins for the build system only
-       // build ":tomcat:7.0.55.2" // or ":tomcat:8.0.20"
-		build ":tomcat:$grailsVersion"
-		runtime ":database-migration:1.1"
-		compile ':cache:1.0.0'
-		
+        build ":tomcat:7.0.55.2" // or ":tomcat:8.0.20"
+
         // plugins for the compile step
-       // compile ":scaffolding:2.1.2"
-       // compile ':cache:1.1.8'
-       // compile ":asset-pipeline:2.1.5"
+        compile ":scaffolding:2.1.2"
+        compile ':cache:1.1.8'
+        compile ":asset-pipeline:2.1.5"
 		
 
         // plugins needed at runtime but not for compilation
-        runtime ":hibernate:$grailsVersion" // or ":hibernate:3.6.10.18"
-        runtime ":resources:1.1.6"
-        runtime ":jquery:1.7.2"
+        runtime ":hibernate4:4.3.8.1" // or ":hibernate:3.6.10.18"
+        runtime ":database-migration:1.4.0"
+        runtime ":jquery:1.11.1"
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"

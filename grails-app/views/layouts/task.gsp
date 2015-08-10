@@ -103,7 +103,7 @@ if (window.indexedDB) {
 					<!-- quando o complet3 recebe o valor true. -->
 						<td {{if complet3 == true}} class="taskCompleted" {{/if}}> ${task1}</td>
 						<td {{if complet3 == true}} class="taskCompleted" {{/if}}><time datetime="${requiredBy}"> ${requiredBy}</time></td>
-						<td {{if complet3 == true}} class="taskCompleted" {{/if}}>${category1}</td>
+						<td {{if complet3 == true}} class="taskCompleted" {{/if}}>${category.id}</td>
 						<td>
 							<nav>
 							{{if complet3 != true}}
